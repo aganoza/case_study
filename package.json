@@ -1,0 +1,14 @@
+{
+  "name": "web-app",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "xstate": "^4.33.0"
+  }
+}

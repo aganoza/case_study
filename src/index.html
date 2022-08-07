@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Web App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha256-7ZWbZUAi97rkirk4DcEp4GWDPkWpRMcNaEyXGsNXjLg="
+      crossorigin="anonymous"
+    />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body class="bg-dark">
+    <div class="container-sm p-5 bg-light">
+      <h1 class="text-center mb-4">E & C</h1>
+      <form>
+        <fieldset class="border p-2 mb-4">
+          <legend class="w-auto" style="float: none; padding: inherit">
+            List of employees
+          </legend>
+          <div class="row g-3">
+            <div class="col">
+              <div class="form-floating mb-2">
+                <input
+                  id="filter"
+                  class="form-control"
+                  placeholder="Enter text to filter"
+                />
+                <label for="filter">Filter</label>
+              </div>
+
+              <div style="max-height: 200px; overflow: auto">
+                <table class="table table-bordered table-striped text-center">
+                  <thead class="sticky-top bg-info text-white">
+                    <tr>
+                      <th>Company</th>
+                      <th>Employee</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody id="employees"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="border p-2 mb-4">
+          <legend class="w-auto" style="float: none; padding: inherit">
+            Company Details
+          </legend>
+          <div class="row align-items-center g-2 mb-3">
+            <div class="col">
+              <div class="form-floating">
+                <input
+                  disabled
+                  id="company_name"
+                  class="form-control"
+                  placeholder="Name"
+                />
+                <label for="company_name">Company Name: </label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2 mb-3">
+            <div class="col">
+              <div class="form-floating">
+                <input
+                  disabled
+                  id="contact_name"
+                  class="form-control"
+                  placeholder="Contact Name"
+                />
+                <label for="contact_name">Contact Name: </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating">
+                <input
+                  disabled
+                  id="contact_email"
+                  class="form-control"
+                  placeholder="Contact Email"
+                />
+                <label for="contact_email">Contact Email: </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-2 mb-3">
+            <div class="col">
+              <select
+                class="form-select form-select-sm"
+                aria-label="Select employees"
+                size="6"
+                id="company_employees"
+              ></select>
+            </div>
+          </div>
+
+          <div class="row align-items-center g-2 mb-3">
+            <div class="col">
+              <div class="form-floating">
+                <input
+                  disabled
+                  id="new_employee_first_name"
+                  class="form-control"
+                  placeholder="New Employee Name"
+                />
+                <label for="new_employee_first_name">Enter first name: </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating">
+                <input
+                  disabled
+                  id="new_employee_last_name"
+                  class="form-control"
+                  placeholder="New Employee Last Name"
+                />
+                <label for="new_employee_last_name">Enter last name: </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating">
+                <input
+                  disabled
+                  type="email"
+                  id="new_employee_email"
+                  class="form-control"
+                  placeholder="New Employee Email"
+                />
+                <label for="new_employee_email">Enter email: </label>
+              </div>
+            </div>
+            <div class="col-2 text-center">
+              <button type="button" class="btn btn-info text-white" id="create">
+                +
+              </button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
