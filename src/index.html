@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Web App</title>
     <link
       rel="stylesheet"
@@ -50,7 +51,7 @@
           <legend class="w-auto" style="float: none; padding: inherit">
             Company Details
           </legend>
-          <div class="row align-items-center g-2 mb-3">
+          <div class="row align-items-center g-2 mb-2">
             <div class="col">
               <div class="form-floating">
                 <input
@@ -64,7 +65,7 @@
             </div>
           </div>
           <div class="row g-2 mb-3">
-            <div class="col">
+            <div class="col-12 col-sm-6">
               <div class="form-floating">
                 <input
                   disabled
@@ -75,7 +76,7 @@
                 <label for="contact_name">Contact Name: </label>
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6">
               <div class="form-floating">
                 <input
                   disabled
@@ -100,7 +101,7 @@
           </div>
 
           <div class="row align-items-center g-2 mb-3">
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md">
               <div class="form-floating">
                 <input
                   disabled
@@ -111,7 +112,7 @@
                 <label for="new_employee_first_name">Enter first name: </label>
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md">
               <div class="form-floating">
                 <input
                   disabled
@@ -122,7 +123,7 @@
                 <label for="new_employee_last_name">Enter last name: </label>
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md mb-2 mb-md-0">
               <div class="form-floating">
                 <input
                   disabled
@@ -134,7 +135,9 @@
                 <label for="new_employee_email">Enter email: </label>
               </div>
             </div>
-            <div class="col-2 text-center">
+            <div
+              class="d-grid gap-2 d-md-flex justify-content-md-center col-md-1"
+            >
               <button type="button" class="btn btn-info text-white" id="create">
                 +
               </button>
